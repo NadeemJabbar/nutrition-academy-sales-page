@@ -8,7 +8,7 @@ import Overview from '../components/Overview';
 import Certification from '../components/Certification';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
-import Bonus from '../components/Bonus';
+import BonusWithTimer from '../components/BonusWithTimer';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
@@ -588,7 +588,7 @@ const Home: React.FC = () => {
       </section>
       
       <Pricing />
-      <Bonus />
+      <BonusWithTimer />
       <FAQ />
       <Footer />
     </div>
