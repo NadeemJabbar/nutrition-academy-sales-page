@@ -61,8 +61,8 @@ const Bonus: React.FC = () => {
             </a>
           </div>
           
-          <div className="lg:w-1/2">
-            <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl bg-white/10 backdrop-blur-sm">
+          <div className="lg:w-1/2 flex justify-center">
+            <div className="relative h-[400px] max-w-[300px] w-full rounded-2xl overflow-hidden shadow-xl bg-white/10 backdrop-blur-sm border border-white/20">
               <Image 
                 src="/images/coaching-career-kickstarter.png" 
                 alt="Coaching Career Kickstarter Course" 
