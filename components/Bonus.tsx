@@ -62,17 +62,17 @@ const Bonus: React.FC = () => {
           </div>
           
           <div className="lg:w-1/2">
-            <div className="relative h-[350px] w-full rounded-xl overflow-hidden shadow-xl">
+            <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl bg-white/10 backdrop-blur-sm">
               <Image 
                 src="/images/coaching-career-kickstarter.png" 
                 alt="Coaching Career Kickstarter Course" 
                 fill
                 style={{ 
-                  objectFit: 'cover',
-                  objectPosition: 'center 20%'
+                  objectFit: 'contain',
+                  objectPosition: 'center'
                 }}
                 priority
-                className="transition-transform duration-300 hover:scale-105"
+                className="transition-transform duration-300 hover:scale-102"
               />
             </div>
           </div>
