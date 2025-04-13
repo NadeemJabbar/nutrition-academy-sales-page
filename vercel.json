@@ -5,6 +5,7 @@
   "installCommand": "npm install",
   "outputDirectory": ".next",
   "framework": "nextjs",
+  "ignoreCommand": "if [ -d \"nutrition-academy-sales\" ]; then echo \"Ignoring nested project\"; fi",
   "headers": [
     {
       "source": "/(.*)",
