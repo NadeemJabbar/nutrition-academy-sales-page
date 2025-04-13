@@ -1,0 +1,17 @@
+# Required Images for Nutrition Academy Sales Page
+
+Please add the following images to this directory:
+
+1. hero-bg.jpg - A high-quality background image for the hero section (nutritional coaching theme)
+2. certification.jpg - Image showing certification or training in action
+3. coach-1.jpg, coach-2.jpg, coach-3.jpg, coach-4.jpg - Profile images of certified nutrition coaches
+4. testimonial-1.jpg, testimonial-2.jpg, testimonial-3.jpg - Headshots for testimonials
+5. features-*.jpg - Images related to each feature of the program
+6. bonus-*.jpg - Images related to bonus offerings
+7. logo.png - Nutrition Academy logo
+
+For optimal performance:
+- Use JPG format for photographs (80-90% quality)
+- Use PNG format for logos and graphics with transparency
+- Optimize all images for web (recommended file size under 500KB each)
+- Maintain consistent aspect ratios within each image category 

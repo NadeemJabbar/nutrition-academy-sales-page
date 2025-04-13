@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 font-medium rounded-md transition-all duration-300 text-center;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+  
+  .container-custom {
+    @apply w-[95%] max-w-7xl mx-auto px-3 sm:px-4 md:px-5 lg:px-8;
+  }
+  
+  .section {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
+  }
+  
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center;
+  }
+  
+  .text-shadow-sm {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Mobile navigation helpers */
+  .mobile-menu-open {
+    @apply overflow-hidden;
+  }
+
+  /* Responsive grid helpers */
+  .responsive-grid-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8;
+  }
+
+  .responsive-grid-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8;
+  }
+
+  .responsive-grid-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8;
+  }
+
+  /* Hide scrollbar for specific elements */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    .btn {
+      @apply px-4 py-2 text-sm;
+    }
+    
+    .section {
+      @apply py-8;
+    }
+  }
+} 
