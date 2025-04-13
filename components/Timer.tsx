@@ -41,40 +41,33 @@ const Timer: React.FC<TimerProps> = ({ endDate }) => {
   }, [endDate]);
   
   return (
-    <div className="bg-gradient-to-r from-primary-dark to-primary text-white rounded-xl p-6 shadow-lg text-center">
-      <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">LIMITED TIME OFFER ENDS IN:</h3>
-      <div className="flex flex-wrap space-x-2 md:space-x-4 justify-center">
-        {timeLeft.days > 0 && (
+    <div className="bg-gradient-to-r from-primary-dark to-primary text-white rounded-xl p-4 shadow-lg text-center max-w-2xl mx-auto">
+      <h3 className="text-lg md:text-xl font-bold mb-3 text-white">OFFER ENDS IN:</h3>
+      <div className="flex justify-center">
+        <div className="flex flex-row space-x-2 justify-center">
           <div className="flex flex-col items-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary bg-white rounded-lg w-16 md:w-20 h-16 md:h-20 flex items-center justify-center mb-2">
-              {timeLeft.days}
+            <div className="text-xl md:text-2xl font-bold text-primary bg-white rounded-lg w-12 md:w-14 h-12 md:h-14 flex items-center justify-center">
+              {timeLeft.hours.toString().padStart(2, '0')}
             </div>
-            <span className="text-sm text-white">Days</span>
+            <span className="text-xs text-white mt-1">Hours</span>
           </div>
-        )}
-        
-        <div className="flex flex-col items-center">
-          <div className="text-3xl md:text-4xl font-bold text-primary bg-white rounded-lg w-16 md:w-20 h-16 md:h-20 flex items-center justify-center mb-2">
-            {timeLeft.hours.toString().padStart(2, '0')}
+          
+          <div className="flex flex-col items-center">
+            <div className="text-xl md:text-2xl font-bold text-primary bg-white rounded-lg w-12 md:w-14 h-12 md:h-14 flex items-center justify-center">
+              {timeLeft.minutes.toString().padStart(2, '0')}
+            </div>
+            <span className="text-xs text-white mt-1">Minutes</span>
           </div>
-          <span className="text-sm text-white">Hours</span>
-        </div>
-        
-        <div className="flex flex-col items-center">
-          <div className="text-3xl md:text-4xl font-bold text-primary bg-white rounded-lg w-16 md:w-20 h-16 md:h-20 flex items-center justify-center mb-2">
-            {timeLeft.minutes.toString().padStart(2, '0')}
+          
+          <div className="flex flex-col items-center">
+            <div className="text-xl md:text-2xl font-bold text-primary bg-white rounded-lg w-12 md:w-14 h-12 md:h-14 flex items-center justify-center">
+              {timeLeft.seconds.toString().padStart(2, '0')}
+            </div>
+            <span className="text-xs text-white mt-1">Seconds</span>
           </div>
-          <span className="text-sm text-white">Minutes</span>
-        </div>
-        
-        <div className="flex flex-col items-center">
-          <div className="text-3xl md:text-4xl font-bold text-primary bg-white rounded-lg w-16 md:w-20 h-16 md:h-20 flex items-center justify-center mb-2">
-            {timeLeft.seconds.toString().padStart(2, '0')}
-          </div>
-          <span className="text-sm text-white">Seconds</span>
         </div>
       </div>
-      <p className="mt-4 text-white/90 font-medium">Don't miss out on this exclusive bonus offer!</p>
+      <p className="mt-3 text-white/90 text-sm font-medium">Don't miss out on this exclusive bonus offer!</p>
     </div>
   );
 };
