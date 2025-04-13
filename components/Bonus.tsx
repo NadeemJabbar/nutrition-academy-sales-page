@@ -67,7 +67,10 @@ const Bonus: React.FC = () => {
                 src="/images/coaching-career-kickstarter.png" 
                 alt="Coaching Career Kickstarter Course" 
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ 
+                  objectFit: 'cover',
+                  objectPosition: 'center 20%'
+                }}
                 priority
                 className="transition-transform duration-300 hover:scale-105"
               />
