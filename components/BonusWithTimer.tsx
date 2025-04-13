@@ -9,11 +9,11 @@ const BonusWithTimer: React.FC = () => {
   endDate.setMinutes(endDate.getMinutes() + 45);
   
   return (
-    <div className="bonus-timer-section bg-gray-50 py-8">
-      <div className="container-custom max-w-4xl mx-auto px-4 mb-8">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">Special Limited Time Offer</h2>
-          <p className="text-base text-gray-600 max-w-xl mx-auto">This exclusive bonus is about to expire! Act quickly to secure your spot.</p>
+    <div className="bonus-timer-section bg-gray-50 py-6">
+      <div className="container-custom max-w-4xl mx-auto px-4 mb-4">
+        <div className="text-center mb-4">
+          <h2 className="text-xl md:text-2xl font-bold mb-2">Special Limited Time Offer</h2>
+          <p className="text-sm text-gray-600 max-w-xl mx-auto">This exclusive bonus is about to expire! Act quickly to secure your spot.</p>
         </div>
         <Timer endDate={endDate} />
       </div>
